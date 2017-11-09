@@ -27,6 +27,7 @@ class App extends Component {
     render() {
         const { colors, sort } = store.getState()
         const sortedColors = [...colors].sort(sortFunction(sort))
+        
         return (
             <div className="app">
                 <SortMenu />
