@@ -1,4 +1,5 @@
-import '../../stylesheets/APP.scss'
+
+import '../stylesheets/App.scss'
 import { Component } from 'react'
 import PropTypes from 'prop-types'
 import SortMenu from './SortMenu'
@@ -7,7 +8,6 @@ import AddColorForm from './AddColorForm'
 import { sortFunction } from '../lib/array-helpers'
 
 class App extends Component {
-
     getChildContext() {
         return {
             store: this.props.store
@@ -35,7 +35,6 @@ class App extends Component {
             </div>
         )
     }
-
 }
 
 App.propTypes = {
